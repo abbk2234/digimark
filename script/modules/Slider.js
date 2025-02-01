@@ -13,6 +13,7 @@ const homeSliderBanner = new Swiper("#home-slider-banner", {
 });
 const homeSliderSale = new Swiper("#home-slider-sale", {
   loop: true,
+  autoplay: true,
   slidesPerView: 4,
   spaceBetween: 10,
   breakpoints: {
