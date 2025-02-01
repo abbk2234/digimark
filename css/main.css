@@ -12,9 +12,11 @@
   font-family: "Shabnam";
   src: url(../font/Shabnam/Shabnam.ttf);
 }
+
 * {
   font-family: Shabnam;
 }
+
 @media (min-width: 768px) {
   .fixed-md-top {
     position: fixed !important;
@@ -24,6 +26,7 @@
     z-index: 1030 !important;
   }
 }
+
 @media (max-width: 767px) {
   .fixed-md-top {
     position: fixed;
@@ -33,29 +36,43 @@
     z-index: 1030;
   }
 }
+
 .bg-glass {
   background-color: #ffffff3b;
   backdrop-filter: blur(5px);
   border: 1px solid rgba(128, 128, 128, 0.408);
 }
+
 .bg-img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+div[cu-height="150px"] {
+  height: 150px;
+}
+.ratio-cu[cu-height="130px"]{
+  height: 130px;
+}
+
 header .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: #0080ff;
 }
+
 header .navbar-nav .nav-link {
   font-size: 13px !important;
 }
+
 header nav:last-of-type .nav-link {
   font-size: 13px !important;
 }
+
 header nav:last-of-type .nav-link.active {
   color: #0080ff;
 }
+
 section:first-of-type {
   background-image: linear-gradient(#0000006f, #0000006f), url(../media/image/about.jpg);
   background-repeat: no-repeat;
@@ -63,9 +80,11 @@ section:first-of-type {
   background-size: cover;
   height: 100vh;
 }
+
 #home-slider-banner .col-4 {
   max-height: 300px;
 }
+
 @media screen and (min-width: 992px) {
   section:first-of-type img {
     width: 60%;
