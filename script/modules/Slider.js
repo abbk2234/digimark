@@ -1,6 +1,9 @@
 const homeSliderBanner = new Swiper("#home-slider-banner", {
   loop: true,
   slidesPerView: 1,
+  autoplay: {
+    delay: 5000,
+  },
   centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -13,7 +16,9 @@ const homeSliderBanner = new Swiper("#home-slider-banner", {
 });
 const homeSliderSale = new Swiper("#home-slider-sale", {
   loop: true,
-  autoplay: true,
+  autoplay: {
+   delay: 5000,
+  },
   slidesPerView: 4,
   spaceBetween: 10,
   breakpoints: {
