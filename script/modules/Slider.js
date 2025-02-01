@@ -2,6 +2,7 @@ const homeSliderBanner = new Swiper("#home-slider-banner", {
   loop: true,
   autoplay: {
     delay: 3000,
+	pauseOnMouseEnter: true,
   },
   slidesPerView: 1,
   centeredSlides: true,
@@ -18,6 +19,7 @@ const homeSliderSale = new Swiper("#home-slider-sale", {
   loop: true,
   autoplay: {
    delay: 2000,
+   pauseOnMouseEnter: true,
   },
   slidesPerView: 4,
   spaceBetween: 10,
