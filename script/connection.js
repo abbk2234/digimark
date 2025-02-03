@@ -35,30 +35,28 @@ async function getData() {
     let res = await fetch("https://67964d45bedc5d43a6c4db00.mockapi.io/api/db1/data/1");
     if (res.status == 200) {
       let data = await res.json();
-      data.db.slider_big_sale.map((elem) => {
-        document.querySelector("#home-slider-sale .swiper-wrapper").innerHTML += `
-      <div class="swiper-slide d-flex flex-column p-1 rounded-3 bg-body-tertiary">
-            <div><img src="${elem.img_url}" class="object-fit-cover rounded-3 w-100 border-0" alt="" /></div>
-            <div>
-              <p class="fw-lighter">${elem.name}</p>
-              <p class="fw-bolder text-end">${elem.price} <span class="fs-6 fw-lighter">تومان</span></p>
-            </div>
-          </div>`;
-      });
       data.db.slider_home_banner.map((elem) => {
         document.querySelector("#home-slider-banner .swiper-wrapper").innerHTML += `
-        <div style="background-image:linear-gradient(var(--bs-bg-over)),url(${elem.img_url});" class="swiper-slide bg-body-tertiary rounded-4 p-3 bg-img">
-        <div class="row flex-column-reverse flex-md-row">
-          <div class="col-md-7">
-            <p class="fs-4">${elem.name}</p>
-            <p>${elem.description}</p>
-            <a href="#" class="btn btn-warning ${elem.cta_mode}">${elem.cta_btn}</a>
-          </div>
-          <div class="col-md-5">
-            <img src="${elem.img_url}" class="rounded img-fluid" alt="" />
-          </div>
+        <div class="swiper-slide height-300 bg-img" style="background-image: url(${elem.img_url});">
+        <div class="text-center text-light w-50 d-flex align-items-start justify-content-center h-100 flex-column ps-5 text-start">
+          <p class="fs-3">${elem.name}</p>
+          <p class="fs-5">${elem.description}</p>
+          <a href="#" class="btn btn-outline-light border-blue-200 align-self-end ${elem.cta_mode}">${elem.cta_btn}</a>
         </div>
-      </div>`;
+      </div>
+        `;
+      });
+      data.db.slider_big_sale.map((elem) => {
+        document.querySelector("#home-slider-sale .swiper-wrapper").innerHTML += `
+        <div class="swiper-slide bg-body-tertiary rounded border border-red-400 p-1 d-flex flex-column align-items-center">
+          <div>
+            <img src="${elem.img_url}" class="img-thumbnail border-red-100" alt="" />
+          </div>
+          <div>
+            <p class="fw-lighter">${elem.name}</p>
+            <p><small>${elem.price}</small>تومان</p>
+          </div>
+        </div>`;
       });
     } else {
       throw new Error(`error: ${res.status}`);
