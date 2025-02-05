@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="https://kasrahosseini.github.io/colcs/colcs.css" />
+    <link rel="stylesheet" href="../css/text-res.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="shortcut icon" href="../digimark.svg" type="image/x-icon" />
+    <title>Digi Mark - Blog page</title>
+  </head>
+  <body data-bs-theme="light" data-theme-mode="light" class="pb-5 d-flex justify-content-center align-items-center flex-column gap-4">
+    <header class="sticky-cu fixed-md-cu w-100">
+      <nav class="navbar bg-light border rounded-bottom-5 navbar-expand-sm d-none d-md-block">
+        <div class="container-fluid justify-content-around">
+          <a href="../index.html" class="text-black navbar-brand"><img src="../digimark.svg" width="30" class="me-1" alt="navbar brand logo" />دیجی مارک</a>
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a href="../index.html" class="text-dark nav-link">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-dark nav-link">محصولات</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="text-dark nav-link active">بلاگ</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link text-dark"><i class="fa-duotone fa-cart-shopping"></i></button>
+            </li>
+            <li class="nav-item">
+              <div class="dropstart">
+                <button class="nav-link text-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="fa-duotone fa-circle-user"></i></button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item text-center">
+                    <i class="display-1 fa-duotone fa-circle-user"></i>
+                    <p class="fs-3 fw-light">کاربر مهمان</p>
+                  </li>
+                  <li class="dropdown-item btn-group">
+                    <button class="btn btn-outline-dark border-blue text-blue bg-hvr-blue text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> ویرایش</button>
+                    <button class="btn btn-outline-dark border-red text-red bg-hvr-red text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> خروج</button>
+                  </li>
+                  <li class="dropdown-item d-flex justify-content-center">
+                    <button class="dark-light-btn nav-link"><i class="fa-duotone fa-moon-stars"></i></button>
+                  </li>
+                  <li class="dropdown-item d-flex justify-content-between px-2">
+                    <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">درباره ما</a>
+                    <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">تماس با ما</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="d-flex justify-content-evenly align-items-end py-1 bg-gray-200 border border-gray-400 rounded-top-5 text-dark text-center d-md-none">
+        <a href="#" class="text-dark text-decoration-none text-gray-900 item-header d-flex gap-1 justify-content-center flex-column"><i class="fa-duotone fa-basket-shopping txt-5 bg-gray-200 rounded-circle"></i> محصولات</a>
+        <a href="blog.html" class="text-dark text-decoration-none text-gray-900 item-header d-flex gap-1 justify-content-center flex-column active"><i class="fa-duotone fa-file-alt txt-5 bg-gray-200 rounded-circle"></i> بلاگ</a>
+        <a href="../index.html" class="text-dark text-decoration-none text-gray-900 item-header d-flex gap-1 justify-content-center flex-column"><i class="fa-duotone fa-home-alt txt-5 bg-gray-200 rounded-circle"></i> خانه</a>
+        <button class="text-dark border-0 bg-gray-200 text-gray-900 item-header d-flex gap-1 align-items-center justify-content-center flex-column p-0"><i class="fa-duotone fa-cart-shopping txt-5"></i>خرید ها</button>
+        <div class="dropup">
+          <button class="text-dark border-0 bg-gray-200 text-gray-900 item-header d-flex gap-1 align-items-center justify-content-center flex-column p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="fa-duotone txt-5 fa-circle-user"></i>پروفایل</button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item text-center">
+              <i class="display-1 fa-duotone fa-circle-user"></i>
+              <p class="fs-3 fw-light">کاربر مهمان</p>
+            </li>
+            <li class="dropdown-item btn-group">
+              <button class="btn btn-outline-dark border-blue text-blue bg-hvr-blue text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> ویرایش</button>
+              <button class="btn btn-outline-dark border-red text-red bg-hvr-red text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> خروج</button>
+            </li>
+            <li class="dropdown-item d-flex justify-content-center">
+              <button class="dark-light-btn nav-link"><i class="fa-duotone fa-moon-stars"></i></button>
+            </li>
+            <li class="dropdown-item d-flex justify-content-between px-2">
+              <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">درباره ما</a>
+              <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="col-12 col-md-10 col-lg-6">
+      <div class="carousel slide carousel-fade" id="banner-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button data-bs-target="#banner-carousel" data-bs-slide-to="0" class="active"></button>
+          <button data-bs-target="#banner-carousel" data-bs-slide-to="1"></button>
+          <button data-bs-target="#banner-carousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../media/image/about.jpg" class="d-block w-100" alt="" />
+            <div class="carousel-caption bg-dark bg-opacity-75 rounded-pill">
+              <a href="#" class="text-decoration-none text-light">موضوع پست منتخب</a>
+              <h5 class="d-none d-md-block">توضیحات اولیه درباره پست منتخب</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../media/image/about.jpg" class="d-block w-100" alt="" />
+            <div class="carousel-caption bg-dark bg-opacity-75 rounded-pill">
+              <a href="#" class="text-decoration-none text-light">موضوع پست منتخب</a>
+              <h5 class="d-none d-md-block">توضیحات اولیه درباره پست منتخب</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../media/image/about.jpg" class="d-block w-100" alt="" />
+            <div class="carousel-caption bg-dark bg-opacity-75 rounded-pill">
+              <a href="#" class="text-decoration-none text-light">موضوع پست منتخب</a>
+              <h5 class="d-none d-md-block">توضیحات اولیه درباره پست منتخب</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#banner-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#banner-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container-md">
+      <div class="row align-items-center flex-column">
+        <div class="col-12">
+          <h2>دسته بندی ها</h2>
+        </div>
+        <div class="col-12 swiper position-relative" id="blog-cate">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-circle ratio overflow-hidden ratio-1x1">
+                <img src="../media/image/about.jpg" class="w-100 p-1 border rounded-circle border-2 border-red-400" alt="" />
+              </div>
+              <div class="text-center txt-5 fw-lighter"><p>متن دسته بندی</p></div>
+            </div>
+          </div>
+          <div class="position-absolute z-3 bottom-0 w-100 d-flex justify-content-around px-5">
+            <button class="btn-swiper-next bg-transparent border-0 fs-3"><i class="fa fa-angle-right"></i></button>
+            <button class="btn-swiper-prev bg-transparent border-0 fs-3"><i class="fa fa-angle-left"></i></button>
+          </div>
+          <div class="swiper-pagination z-2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="d-flex align-items-center justify-content-center flex-column gap-3">
+        <div class="col-12 col-md-10 col-lg-8 row rounded-4 border p-2">
+          <div class="col-5 col-md-3 overflow-hidden rounded-3">
+            <img src="../media/image/about.jpg" class="w-100" alt="" />
+          </div>
+          <div class="col">
+            <a href="#" class="txt-4 text-decoration-none text-gray-900">موضوع پست</a>
+            <p class="txt-5 d-none d-sm-block">توضیحات پست</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 col-lg-8 row rounded-4 border p-2">
+          <div class="col-5 col-md-3 overflow-hidden rounded-3">
+            <img src="../media/image/about.jpg" class="w-100" alt="" />
+          </div>
+          <div class="col">
+            <a href="#" class="txt-4 text-decoration-none text-gray-900">موضوع پست</a>
+            <p class="txt-5 d-none d-sm-block">توضیحات پست</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 col-lg-8 row rounded-4 border p-2">
+          <div class="col-5 col-md-3 overflow-hidden rounded-3">
+            <img src="../media/image/about.jpg" class="w-100" alt="" />
+          </div>
+          <div class="col">
+            <a href="#" class="txt-4 text-decoration-none text-gray-900">موضوع پست</a>
+            <p class="txt-5 d-none d-sm-block">توضیحات پست</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 col-lg-8 row rounded-4 border p-2">
+          <div class="col-5 col-md-3 overflow-hidden rounded-3">
+            <img src="../media/image/about.jpg" class="w-100" alt="" />
+          </div>
+          <div class="col">
+            <a href="#" class="txt-4 text-decoration-none text-gray-900">موضوع پست</a>
+            <p class="txt-5 d-none d-sm-block">توضیحات پست</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script/blog-script.js" type="module"></script>
+    <script src="../script/connection.js"></script>
+  </body>
+</html>
