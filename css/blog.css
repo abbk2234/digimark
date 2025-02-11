@@ -13,7 +13,7 @@ body {
 
 header .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: #0080ff !important;
+    color: var(--col-red-500) !important;
 }
 
 header .navbar-nav .nav-link {
@@ -41,7 +41,7 @@ header nav:last-of-type .active {
 }
 
 header nav:last-of-type .active i {
-    color: black;
+    color: var(--col-red-500);
     position: absolute;
     left: 50%;
     transform: translate(-50%, -60%);
@@ -49,7 +49,7 @@ header nav:last-of-type .active i {
     background-color: rgba(var(--bs-light-rgb), 1);
     width: 60px;
     height: 60px;
-}
+  }
 
 .sticky-cu {
     position: sticky;
