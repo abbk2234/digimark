@@ -59,17 +59,25 @@ body {
   background-size: cover;
 }
 
-div[cu-height="150px"] {
+.w-min {
+  width: fit-content;
+}
+
+[cu-height="150px"] {
   height: 150px;
 }
 
-.ratio-cu[cu-height="130px"] {
+[cu-height="130px"] {
   height: 130px;
+}
+
+[cu-height="250px"] {
+  height: 250px;
 }
 
 header .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: #0080ff !important;
+  color: var(--col-red-500) !important;
 }
 
 header .navbar-nav .nav-link {
@@ -97,7 +105,7 @@ header nav:last-of-type .active {
 }
 
 header nav:last-of-type .active i {
-  color: black;
+  color: var(--col-red-500);
   position: absolute;
   left: 50%;
   transform: translate(-50%, -60%);
