@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../css/colcs.min.css" />
+    <link rel="stylesheet" href="../css/text-res.css" />
+    <style>
+      @font-face {
+        font-family: "shabnam";
+        src: url(../font/Shabnam/Shabnam.ttf);
+      }
+      * {
+        font-family: shabnam;
+      }
+      body {
+        height: 100vh;
+        background-image: url(../digimark.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .bg-glass {
+        backdrop-filter: blur(10px);
+      }
+      [width="250px"] {
+        width: 250px;
+      }
+      .h-60 {
+        height: 60vh;
+      }
+      .text-center-ab {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-100%);
+      }
+    </style>
+    <title>Digi Mark - Login page</title>
+  </head>
+  <body data-theme-mode="light" class="d-flex align-items-center justify-content-center position-relative">
+    <div class="w-100 position-absolute bottom-0 top-50 rounded-top-circle bg-red z-0"></div>
+    <section class="w-75 p-5 border border-2 border-red-400 bg-glass rounded-5 z-1">
+      <h1 class="bg-red text-light d-inline-block rounded-top-5 p-2 text-center-ab">دیجی مارک</h1>
+      <div class="container-fluid row justify-content-center align-content-stretch overflow-hidden h-60">
+        <div class="col-md-6 bg-light text-center p-2 rounded-start-3 d-flex justify-content-center flex-column align-items-center">
+          <h2 class="txt-1 fw-bolder">ورود</h2>
+          <p>اگر قبلا در سایت ثبت نام کرده اید ، ورود کنید.</p>
+          <button class="btn btn-lg bg-red" width="250px">ورود</button>
+        </div>
+        <div class="col-md-6 bg-red text-center p-2 rounded-end-3 d-flex justify-content-center flex-column align-items-center">
+          <h2 class="txt-1 fw-bolder">ثبت نام</h2>
+          <p>اگر با تازگی وارد سایت شده اید ، ثبت نام کنید.</p>
+          <button class="btn btn-lg bg-light" width="250px">ثبت نام</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
