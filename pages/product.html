@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="https://kasrahosseini.github.io/colcs/colcs.css" />
+    <link rel="stylesheet" href="../css/text-res.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="shortcut icon" href="../digimark.svg" type="image/x-icon" />
+    <title>Digi Mark - Home page</title>
+  </head>
+  <body data-bs-theme="light" data-theme-mode="light" class="pb-5 pb-md-0 d-flex justify-content-center align-items-center flex-column">
+    <header class="sticky-cu fixed-md-cu w-100">
+      <nav class="navbar bg-light rounded-bottom-5 navbar-expand-sm d-none d-md-block">
+        <div class="container-fluid justify-content-around">
+          <a href="index.html" class="text-black navbar-brand"><img src="../digimark.svg" width="30" class="me-1" alt="navbar brand logo" />دیجی مارک</a>
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a href="../index.html" class="text-dark nav-link">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="text-dark nav-link active">محصولات</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="text-dark nav-link">بلاگ</a>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link text-dark"><i class="fa-duotone fa-cart-shopping"></i></button>
+            </li>
+            <li class="nav-item">
+              <div class="dropstart">
+                <button class="nav-link text-dark" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="fa-duotone fa-circle-user"></i></button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item text-center">
+                    <i class="display-1 fa-duotone fa-circle-user"></i>
+                    <p class="fs-3 fw-light">کاربر مهمان</p>
+                  </li>
+                  <li class="dropdown-item btn-group">
+                    <button class="btn btn-outline-dark border-blue text-blue bg-hvr-blue text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> ویرایش</button>
+                    <button class="btn btn-outline-dark border-red text-red bg-hvr-red text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> خروج</button>
+                  </li>
+                  <li class="dropdown-item d-flex justify-content-center">
+                    <button class="dark-light-btn nav-link"><i class="fa-duotone fa-moon-stars"></i></button>
+                  </li>
+                  <li class="dropdown-item d-flex justify-content-between px-2">
+                    <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">درباره ما</a>
+                    <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">تماس با ما</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="d-flex justify-content-evenly align-items-end py-1 bg-light rounded-top-5 text-dark text-center d-md-none">
+        <a href="product.html" class="text-dark text-decoration-none item-header d-flex gap-1 justify-content-center flex-column active"><i class="fa-duotone fa-basket-shopping fs-5 rounded-circle"></i> محصولات</a>
+        <a href="blog.html" class="text-dark text-decoration-none item-header d-flex gap-1 justify-content-center flex-column"><i class="fa-duotone fa-file-alt fs-5 rounded-circle"></i> بلاگ</a>
+        <a href="../index.html" class="text-dark text-decoration-none item-header d-flex gap-1 justify-content-center flex-column"><i class="fa-duotone fa-home-alt fs-5 rounded-circle"></i> خانه</a>
+        <button class="text-dark border-0 bg-light item-header d-flex gap-1 align-items-center justify-content-center flex-column p-0"><i class="fa-duotone fa-cart-shopping fs-5"></i>خرید ها</button>
+        <div class="dropup">
+          <button class="text-dark border-0 bg-light item-header d-flex gap-1 align-items-center justify-content-center flex-column p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="fa-duotone fs-5 fa-circle-user"></i>پروفایل</button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item text-center">
+              <i class="display-1 fa-duotone fa-circle-user"></i>
+              <p class="fs-3 fw-light">کاربر مهمان</p>
+            </li>
+            <li class="dropdown-item btn-group">
+              <button class="btn btn-outline-dark border-blue text-blue bg-hvr-blue text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> ویرایش</button>
+              <button class="btn btn-outline-dark border-red text-red bg-hvr-red text-hvr-light"><i class="fa-duotone fa-pencil-alt"></i> خروج</button>
+            </li>
+            <li class="dropdown-item d-flex justify-content-center">
+              <button class="dark-light-btn nav-link"><i class="fa-duotone fa-moon-stars"></i></button>
+            </li>
+            <li class="dropdown-item d-flex justify-content-between px-2">
+              <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">درباره ما</a>
+              <a href="#" class="text-gray-300 text-hvr-gray hover-colcs nav-link">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <footer class="container-fluid my-2 pt-1 border-top border-red rounded-top-5 px-1">
+      <div class="row m-0 container-fluid align-items-center justify-content-center">
+        <div class="col-12 row">
+          <div class="col-3">
+            <img src="../digimark.png" class="w-100" alt="" />
+            <div class="d-flex flex-column flex-md-row txt-6 justify-content-center align-items-center gap-0 gap-md-3 w-100">
+              <p class="m-0">021-4562578</p>
+              <p class="d-none d-md-block">|</p>
+              <p class="m-0">24 ساعته</p>
+            </div>
+          </div>
+          <div class="col">
+            <h2 class="text-red">دیجی مارک</h2>
+            <p class="text-gray-400" id="footer-text">
+              یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد. <br />
+              ویژگی‌هایی که فروشگاه اینترنتی دیجی مارک سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد. یکی از مهم‌ترین دغدغه‌های کاربران دیجی مارک یا هر فروشگاه‌ اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد. دیجی مارک شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. هر یک از روش های ارسال دیجی مارک شرایط و ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر برسند. برای آگاهی بیشتر مشتریان از خدمات دیجی مارک، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی، قرار داده است که شامل 8 نوع ارسال کالا به روش‌های زیر است: ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده، ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع سوپرمارکتی، ارسال با پست
+            </p>
+            <button class="btn text-info" id="open-desc">باز کردن</button>
+          </div>
+        </div>
+        <div class="col-lg-6 row align-items-stretch justify-content-evenly">
+          <div class="col-6">
+            <p class="txt-6 fw-bolder text-red">دسترسی سریع</p>
+            <a href="../index.html" class="text-decoration-none text-red-300 d-flex align-items-center gap-1"><i class="fa fa-angle-left"></i> صفحه اصلی</a>
+            <a href="product.html" class="text-decoration-none text-red-300 d-flex align-items-center gap-1"><i class="fa fa-angle-left"></i> محصولات</a>
+            <a href="blog.html" class="text-decoration-none text-red-300 d-flex align-items-center gap-1"><i class="fa fa-angle-left"></i> بلاگ</a>
+          </div>
+          <div class="col-6">
+            <p class="txt-6 fw-bolder text-red">لینک های مرتبط</p>
+            <a href="#" class="text-decoration-none text-red-300 d-flex align-items-center gap-1"><i class="fa fa-angle-left"></i> سامانه نماد</a>
+            <a href="#" class="text-decoration-none text-red-300 d-flex align-items-center gap-1"><i class="fa fa-angle-left"></i> اتحادیه کسب و کار</a>
+            <a href="#" class="text-decoration-none text-red-300 d-flex align-items-center gap-1"><i class="fa fa-angle-left"></i> شاپرک</a>
+            <a href="#" class="text-decoration-none text-red-300 d-flex align-items-center gap-1"><i class="fa fa-angle-left"></i> وب کاران</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row flex-row justify-content-evenly align-items-center">
+            <img src="../media/image/logo.png" class="bg-gray-50 rounded-3 border col-3" alt="" />
+            <img src="../media/image/kasbokar.webp" class="bg-gray-50 rounded-3 border col-3" alt="" />
+            <img src="../media/image/rezi.webp" class="bg-gray-50 rounded-3 border col-3" alt="" />
+          </div>
+          <div class="mt-5">
+            <p class="ps-2 border-start border-3 border-red">ما را دنبال کنید</p>
+            <div class="d-flex align-items-center justify-content-evenly gap-3">
+              <i class="txt-1 fab fa-instagram text-gray"></i>
+              <i class="txt-1 fab fa-x-twitter text-gray"></i>
+              <i class="txt-1 fab fa-linkedin-in text-gray"></i>
+              <i class="txt-1 fab fa-telegram text-gray"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 bg-gray-300 text-center mt-2">تمام حقوق محفوظ است &copy;</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../script/product-script.js" type="module"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 import documentDayMode from "./modules/Change_theme.js";
 import * as slider from "./modules/Slider.js";
-import Timer from"./modules/Timer.js"
+import toggleBtn from "./modules/Toggle-text.js";
 documentDayMode();
-Timer(1,30,0,0)
+toggleBtn("#open-desc", "#footer-text", 100);
