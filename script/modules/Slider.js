@@ -38,7 +38,10 @@ const homeSliderSale = new Swiper("#home-slider-sale", {
   spaceBetween: 10,
   breakpoints: {
     0: {
-      slidesPerView: 3,
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 3
     },
     576: {
       slidesPerView: 4,
