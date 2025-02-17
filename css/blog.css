@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Shabnam";
+    src: url(../font/Shabnam/Shabnam.ttf);
+}
+
+* {
+    font-family: Shabnam;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--col-red-500) !important;
+}
+
+header .navbar-nav .nav-link {
+    font-size: 18px !important;
+}
+
+header .navbar-nav .nav-link i {
+    font-size: 25px !important;
+}
+
+
+header .item-header {
+    position: relative;
+    font-size: 13px;
+}
+
+header .item-header i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav:last-of-type .active {
+    font-size: 13px;
+}
+
+header nav:last-of-type .active i {
+    color: var(--col-red-500);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 35px !important;
+    background-color: rgba(var(--bs-light-rgb), 1);
+    width: 60px;
+    height: 60px;
+  }
+
+.sticky-cu {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+@media (max-width: 767px) {
+    .fixed-md-cu {
+        position: fixed;
+        top: unset;
+        bottom: 0;
+        z-index: 2000;
+    }
+}
