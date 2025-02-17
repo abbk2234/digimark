@@ -40,9 +40,6 @@ const homeSliderSale = new Swiper("#home-slider-sale", {
     0: {
       slidesPerView: 2,
     },
-    320: {
-      slidesPerView: 3
-    },
     576: {
       slidesPerView: 4,
     },
