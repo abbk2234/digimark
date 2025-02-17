@@ -64,11 +64,11 @@ function minPrice(price) {
 }
 function priceOff(sale, price) {
   if (sale == "" || sale == 0) {
-    return `<p class="txt-5 fw-lighter text-end">${minPrice(price)} <smal>T</smal></p>`;
+    return `<p class="txt-5 fw-light text-end">${minPrice(price)} <smal>T</smal></p>`;
   } else {
     return `
     <div class="d-flex p-0 flex-column gap-0 align-items-end position-relative">
-      <p class="txt-5 fw-lighter text-end p-0 m-0">${minPrice((price * sale) / 100)} <smal>T</smal></p>
+      <p class="txt-5 fw-light text-end p-0 m-0">${minPrice((price * sale) / 100)} <smal>T</smal></p>
       <p class="fw-lighter text-end text-decoration-line-through text-gray p-0 m-0" style="font-size: 10px;">${minPrice(price)}</p>
       <span class="p-1 badge rounded-pill bg-red text-light fw-lighter position-absolute top-right-0">${sale}%</span>
     </div>
