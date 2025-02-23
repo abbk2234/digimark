@@ -62,10 +62,20 @@ body {
 .w-min {
   width: fit-content;
 }
+
 .top-right-0 {
   top: 0;
   right: 0;
 }
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
 .transform-try {
   transform: translateY(-80px);
 }

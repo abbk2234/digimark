@@ -11,9 +11,14 @@ body {
     overflow-x: hidden;
 }
 
+.top-right-0 {
+    top: 0;
+    right: 0;
+}
+
 header .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: #0080ff !important;
+    color: var(--col-red-500) !important;
 }
 
 header .navbar-nav .nav-link {
@@ -64,4 +69,11 @@ header nav:last-of-type .active i {
         bottom: 0;
         z-index: 2000;
     }
+}
+a.active div {
+    border: 10px solid var(--col-red-500);
+}
+a.active p {
+    background-color: var(--col-red-500) !important;
+    color: white !important;
 }

@@ -31,10 +31,32 @@ async function getData() {
           </div>`;
       });
     } else {
-      throw new Error(`error: ${res.status}`);
+      document.body.innerHTML = `<h1 style="margin: 30px 10px;text-align:center;border-bottom:2px gray solid;">${res.status}</h1>`;
+      document.body.innerHTML += `<h2 style="margin: 30px 10px;text-align:center;border-bottom:2px gray solid;">${checkErr(Number(res.status))}</h2>`;
     }
   } catch (err) {
-    console.log(err);
+    document.body.innerHTML = `<h1 style="margin: 30px 10px;text-align:center;border-bottom:2px gray solid;">${res.status}</h1>`;
+    document.body.innerHTML += `<h2 style="margin: 30px 10px;text-align:center;border-bottom:2px gray solid;">${checkErr(Number(res.status))}</h2>`;
   }
 }
 getData();
+function checkErr(err) {
+  switch (err) {
+    case 400:
+      return "نا موفق در ارسال درخواست به سرور";
+    case 403:
+      return "دسترسی به این صفحه مسدود است";
+    case 404:
+      return "صفحه مورد نظر یافت نشد";
+    case 408:
+      return "طولانی بودن زمان درخواست";
+    case 500:
+      return "عدم اتصال به سرور";
+    case 502:
+      return "مشکلی در سرور به وجود امده است";
+    case 503:
+      return "در حال به روز رسانی وبسایت هستیم";
+    case 504:
+      return "مشکلی از سمت سرور پیش آمده است";
+  }
+}

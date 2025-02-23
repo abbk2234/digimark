@@ -85,30 +85,8 @@ const blogCate = new Swiper("#blog-cate", {
     },
   },
 });
-// const serviceSlider = new Swiper(".service-slider", {
-//   loop: true,
-//   autoplay: true,
-//   speed: 400,
-//   centeredSlides: true,
-//   spaceBetween: 50,
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//     },
-//     992: {
-//       slidesPerView: 3,
-//     },
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
-export {homeSliderBanner, homeSliderBannerBrands, homeSliderSale, blogCate};
+const homeBrands = new Swiper("#home-slider-brands", {
+  loop: true,
+  slidesPerView: 5,
+});
+export {homeSliderBanner, homeSliderBannerBrands, homeSliderSale, homeBrands, blogCate};

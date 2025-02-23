@@ -95,7 +95,6 @@
       <div class="row flex-column-reverse flex-md-row">
         <div class="col-md-7 d-flex flex-column text-center text-md-start justify-content-center align-items-center align-items-md-start">
           <h1 class="display-3">به <strong class="text-red-500">دیجی مارک</strong> خوش آمدید</h1>
-          <h2 class="display-6">سلام</h2>
           <p>ورود: <a href="" class="btn bg-emerald text-light bg-hvr-emerald shadow-hvr-box-emerald me-1">وبلاگ</a><a href="" class="btn bg-rose text-light bg-hvr-rose shadow-hvr-box-rose">محصولات</a></p>
         </div>
         <div class="col bg-red p-5 rounded-start-pill d-flex justify-content-center align-items-center">
@@ -134,58 +133,12 @@
         <p class="fs-6" id="date_timer"><kbd>00</kbd>:<kbd>00</kbd>:<kbd>00</kbd></p>
       </div>
       <div class="swiper col-11 col-md-9 col-lg-10" id="home-slider-sale">
-        <div class="swiper-wrapper d-flex align-items-end">
-          <!-- <div class="swiper-slide bg-body-tertiary rounded border border-red-400 h-100 p-1 d-flex flex-column align-items-center">
-            <div>
-              <img src="media/image/about.jpg" class="img-thumbnail border-red-100" alt="" />
-            </div>
-            <div>
-              <p class="fw-lighter">نام محصول</p>
-              <p><small>100000</small></p>
-            </div>
-          </div> -->
-        </div>
+        <div class="swiper-wrapper d-flex align-items-end"></div>
       </div>
     </section>
     <section class="container-fluid py-2 mb-4">
       <div class="row justify-content-evenly align-items-center row-gap-5">
-        <div class="row justify-content-around align-items-center row-gap-5">
-          <div class="col-11 col-md-5 p-0 pe-2 overflow-hidden row justify-content-around align-items-center border border-red-200 rounded-5" cu-height="150px">
-            <div class="col-7 h-100 p-0">
-              <div class="w-min bg-red text-light rounded-end-pill h-100 d-flex justify-content-center align-items-start flex-column ps-1 pe-3">
-                <h3 class="fs-4 fw-bolder">موضوع دسته بندی</h3>
-                <p class="fw-light">توضیحات دسته بندی</p>
-              </div>
-            </div>
-            <div class="ratio-cu ratio ratio-1x1 col overflow-hidden rounded-5 d-flex justify-content-center align-items-center" cu-height="130px">
-              <img src="media/image/about.jpg" class="object-fit-cover rounded-2" alt="" />
-            </div>
-          </div>
-          <div class="col-11 col-md-5 p-0 pe-2 overflow-hidden row justify-content-around align-items-center border border-red-200 rounded-5" cu-height="150px">
-            <div class="col-7 h-100 p-0">
-              <div class="w-min bg-red text-light rounded-end-pill h-100 d-flex justify-content-center align-items-start flex-column ps-1 pe-3">
-                <h3 class="fs-4 fw-bolder">موضوع دسته بندی</h3>
-                <p class="fw-light">توضیحات دسته بندی</p>
-              </div>
-            </div>
-            <div class="ratio-cu ratio ratio-1x1 col overflow-hidden rounded-5 d-flex justify-content-center align-items-center" cu-height="130px">
-              <img src="media/image/about.jpg" class="object-fit-cover rounded-2" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-11 p-0 pe-2 row overflow-hidden justify-content-between align-items-center border border-red-200 rounded-5" cu-height="150px">
-            <div class="col-7 h-100 p-0">
-              <div class="w-min bg-red text-light rounded-end-pill h-100 ps-1 pe-3 d-flex align-items-start justify-content-center flex-column">
-                <h3 class="fs-4 fw-bolder">موضوع دسته بندی</h3>
-                <p class="fw-light">توضیحات دسته بندی</p>
-              </div>
-            </div>
-            <div class="ratio-cu ratio ratio-1x1 col overflow-hidden rounded-5 d-flex justify-content-center align-items-center" cu-height="130px">
-              <img src="media/image/about.jpg" class="object-fit-cover rounded-2" alt="" />
-            </div>
-          </div>
-        </div>
+        <div class="row justify-content-around align-items-center row-gap-5" id="home-categories"></div>
       </div>
     </section>
     <section class="container-lg p-2 rounded-3 overflow-hidden shadow-box-gray-100 shadow-hvr-box-red-300 position-relative hover-colcs d-flex flex-column align-items-center justify-content-center gap-2 mb-3">
@@ -193,19 +146,14 @@
       <div class="w-100 z-1">
         <h3 class="p fs-5 px-2 border-start border-5 border-red">محصولات پر فروش</h3>
       </div>
-      <div class="w-100 z-1 row align-items-stretch justify-content-evenly row-gap-4 column-gap-2" id="home-product">
-        <!-- <div class="p-2 col-5 col-lg-3 border border-red bg-white rounded-4">
-          <div>
-            <img src="media/image/about.jpg" class="img-thumbnail border-0" alt="" />
-          </div>
-          <div>
-            <p class="txt-5 txt-lg-4">نام محصول</p>
-            <p class="txt-5 fw-lighter text-end">120,000 تومان</p>
-          </div>
-        </div> -->
+      <div class="w-100 z-1 row align-items-stretch justify-content-evenly row-gap-4 column-gap-2" id="home-product"></div>
+    </section>
+    <section class="col-12 col-md-10 col-lg-8 p-2">
+      <h3 class="ps-3 border-start border-5 fs-5 border-red">برند های منتخب</h3>
+      <div class="swiper" id="home-slider-brands">
+        <div class="swiper-wrapper"></div>
       </div>
     </section>
-
     <footer class="container-fluid my-2 pt-1 border-top border-red rounded-top-5 px-1">
       <div class="row m-0 container-fluid align-items-center justify-content-center">
         <div class="col-12 row">
