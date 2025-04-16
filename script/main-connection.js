@@ -181,11 +181,11 @@ function minPrice(price) {
 }
 function priceOff(sale, price) {
   if (sale == "" || sale == 0) {
-    return `<p class="txt-5 fw-lighter text-end">${minPrice(price)} <smal><img src="https://abbk2234.github.io/digimark/toman.svg.svg" class="toman-size"/></smal></p>`;
+    return `<p class="txt-5 fw-lighter text-end">${minPrice(price)} <smal><img src="../toman.svg" class="toman-size"/></smal></p>`;
   } else {
     return `
     <div class="d-flex p-0 flex-column gap-0 align-items-end position-relative">
-      <p class="txt-6 fw-light d-flex flex-row align-items-center text-end p-0 m-0 ms-5">${minPrice((price * sale) / 100)} <smal><img src="https://abbk2234.github.io/digimark/toman.svg.svg" class="toman-size"/></smal></p>
+      <p class="txt-6 fw-light d-flex flex-row align-items-center text-end p-0 m-0 ms-5">${minPrice((price * sale) / 100)} <smal><img src="../toman.svg" class="toman-size"/></smal></p>
       <p class="fw-lighter text-end text-decoration-line-through text-gray p-0 m-0 font-10px">${minPrice(price)}</p>
       <span class="p-1 badge rounded-pill bg-emerald text-light fw-lighter position-absolute top-right-0">${sale}%</span>
     </div>
