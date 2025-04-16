@@ -25,9 +25,9 @@ async function getData() {
 
       data.db.product.big_sale.map((elem) => {
         document.querySelector("#home-slider-sale .swiper-wrapper").innerHTML += `
-            <div class="swiper-slide product-modal-btn bg-body-tertiary border border-red-400 text-center p-1 d-flex flex-column align-items-center height-250px product-tab-sale">
+            <div class="swiper-slide product-modal-btn bg-body-tertiary border border-emerald-400 text-center height-250px p-1 d-flex flex-column align-items-center height-250px product-tab-sale">
               <div>
-                <img src="${elem.img_url}" class="img-thumbnail border-red-100" alt="" />
+                <img src="${elem.img_url}" class="img-thumbnail border-emerald-100" alt="" />
               </div>
               <div class="w-100 h-100 d-flex justify-content-between flex-column gap-0">
                 <p class="txt-5">${minNameSlider(elem.title)}</p>
@@ -42,26 +42,26 @@ async function getData() {
       for (let i = 0; i < data.db.product.categories.length; i++) {
         if ((i + 1) % 3 == 0) {
           document.querySelector("#home-categories").innerHTML += `
-            <div class="col-11 p-0 pe-2 overflow-hidden row justify-content-around align-items-center border border-red-200 rounded-5" cu-height="150px">
+            <div class="col-10 p-0 pe-2 overflow-hidden row justify-content-around align-items-center border border-emerald-200 rounded-5 height-150px">
                 <div class="col-7 h-100 p-0">
-                    <div class="w-min bg-red text-light rounded-end-pill h-100 d-flex justify-content-center align-items-start flex-column ps-1 pe-3">
+                    <div class="w-min bg-emerald text-light rounded-end-pill h-100 d-flex justify-content-center align-items-start flex-column ps-5 pe-3">
                         <h3 class="fs-4 fw-bolder">${data.db.product.categories[i].faName}</h3>
                     </div>
                 </div>
-                <div class="ratio-cu ratio ratio-1x1 col overflow-hidden rounded-5 d-flex justify-content-center align-items-center" cu-height="130px">
+                <div class="ratio-cu ratio ratio-1x1 col overflow-hidden rounded-5 d-flex justify-content-center align-items-center height-130px">
                     <img src="${data.db.product.categories[i].thumbnail}" class="object-fit-cover rounded-2" alt="" />
                 </div>
             </div>
             `;
         } else {
           document.querySelector("#home-categories").innerHTML += `
-            <div class="col-11 col-md-5 p-0 pe-2 overflow-hidden row justify-content-around align-items-center border border-red-200 rounded-5" cu-height="150px">
+            <div class="col-10 col-md-5 p-0 pe-2 overflow-hidden row justify-content-around align-items-center border border-emerald-200 rounded-5 height-150px">
                 <div class="col-7 h-100 p-0">
-                    <div class="w-min bg-red text-light rounded-end-pill h-100 d-flex justify-content-center align-items-start flex-column ps-1 pe-3">
+                    <div class="w-min bg-emerald text-light rounded-end-pill h-100 d-flex justify-content-center align-items-start flex-column ps-5 pe-3">
                         <h3 class="fs-4 fw-bolder">${data.db.product.categories[i].faName}</h3>
                     </div>
                 </div>
-                <div class="ratio-cu ratio ratio-1x1 col overflow-hidden rounded-5 d-flex justify-content-center align-items-center" cu-height="130px">
+                <div class="ratio-cu ratio ratio-1x1 col overflow-hidden rounded-5 d-flex justify-content-center align-items-center height-130px">
                     <img src="${data.db.product.categories[i].thumbnail}" class="object-fit-cover rounded-2" alt="" />
                 </div>
             </div>
@@ -71,7 +71,7 @@ async function getData() {
 
       data.db.product.product.map((elem) => {
         document.querySelector("#home-product").innerHTML += `
-            <div class="p-2 product-modal-btn col-5 col-lg-2 border border-red bg-gray-100 rounded-4">
+            <div class="p-2 product-modal-btn hover-colcs shadow-hvr-box-gray col-5 col-lg-2 border border-emerald bg-gray-100 rounded-4">
               <div>
                 <img src="${elem.img_url}" class="img-thumbnail border-0" alt="" />
               </div>
@@ -93,12 +93,12 @@ async function getData() {
           <img src="${elem.thumbnail}" class="w-100 object-fit-cover" alt="">
         </div>`;
       });
-      productTap([...document.querySelectorAll(".product-modal-btn")]);
+      productTab([...document.querySelectorAll(".product-modal-btn")]);
     } else {
       document.body.innerHTML += `
       <div class="toast align-items-center position-fixed top-0 mt-5 z-3 rounded-5 show" data-bs-theme="dark">
         <div class="toast-header rounded-top-5">
-          <div class="p-3 rounded-circle bg-red me-1"></div>
+          <div class="p-3 rounded-circle bg-emerald me-1"></div>
           <strong>دیجی مارک</strong>
           <small class="text-body-secondary ms-auto">پیام خطا</small>
           <button class="btn-close me-2" data-bs-dismiss="toast"></button>
@@ -111,7 +111,7 @@ async function getData() {
     document.body.innerHTML += `
       <div class="toast align-items-center position-fixed top-0 mt-5 z-3 rounded-5 show" data-bs-theme="dark">
         <div class="toast-header rounded-top-5">
-          <div class="p-3 rounded-circle bg-red me-1"></div>
+          <div class="p-3 rounded-circle bg-emerald me-1"></div>
           <strong>دیجی مارک</strong>
           <small class="text-body-secondary ms-auto">پیام خطا</small>
           <button class="btn-close me-2" data-bs-dismiss="toast"></button>
@@ -124,23 +124,23 @@ async function getData() {
 }
 getData();
 
-function productTap(target) {
-  let PTap = document.createElement("div");
-  PTap.classList = "product-modal position-fixed full-screen-fixed z-3";
+function productTab(target) {
+  let PTab = document.createElement("div");
+  PTab.classList = "product-modal position-fixed full-screen-fixed z-3";
 
   target.map((elem) => {
     elem.addEventListener("click", () => {
-      PTap.innerHTML = `
+      PTab.innerHTML = `
       <div class="bg-glass w-100 h-100 rounded-3 z-2">
-        <div class="p-2 p-md-3 col-9 h-100 overflow-auto center-fixed position-absolute rounded-5 bg-gray-50">
-          <button class="btn-close- text-red bg-transparent fw-bold border-0">بستن</button>
+        <div class="p-2 p-md-3 col-10 col-md-9 h-100 overflow-auto center-fixed position-absolute rounded-5 bg-gray-50">
+          <button class="btn-close- text-emerald bg-transparent fw-bold border-0">بستن</button>
           <div class="row gap-2 gap-lg-0 align-items-center flex-column flex-lg-row-reverse">
             <div class="col-lg-6 overflow-hidden rounded-5">
               <img src="${elem.children[0].children[0].src}" class="w-100 object-fit-cover rounded-5" alt=""/>
             </div>
             <div class="col-lg-6 pb-5">
               <p class="fw-bolder txt-4">${elem.children[1].children[1].innerText}</p>
-              <p class="txt-5 text-gray-800">${elem.children[1].children[2].innerText}</p>
+              <p class="txt-4 text-gray-800 text-justify px-4">${elem.children[1].children[2].innerText}</p>
               <div class="bg-gray-200 rounded-5 position-sticky bottom-0 p-2 d-flex flex-column justify-content-center align-items-center">
                 <div class="d-flex justify-content-between align-items-center col-12">
                   <div class="fw-bold txt-6">
@@ -151,16 +151,20 @@ function productTap(target) {
                     ${elem.children[1].children[5].innerHTML}
                   </div>            
                 </div>
-                <button class="txt-5 col-10 rounded-pill bg-red bg-hvr-red-600 border-0">افزودن به سبد خرید <i class="fa-duotone fa-basket-shopping-plus"></i></button>
+                <button class="txt-5 col-10 rounded-pill bg-emerald bg-hvr-emerald-600 border-0">افزودن به سبد خرید <i class="fa-duotone fa-basket-shopping-plus"></i></button>
               </div>
             </div>
           </div>
         </div>  
       </div>`;
-      document.body.appendChild(PTap);
-
-      PTap.querySelector(".btn-close-").addEventListener("click", () => {
-        PTap.remove();
+      document.body.appendChild(PTab);
+      PTab.addEventListener("click", (even) => {
+        if (even.target.classList[0] == "bg-glass") {
+          PTab.remove();
+        }
+      });
+      PTab.querySelector(".btn-close-").addEventListener("click", () => {
+        PTab.remove();
       });
     });
   });
@@ -177,13 +181,13 @@ function minPrice(price) {
 }
 function priceOff(sale, price) {
   if (sale == "" || sale == 0) {
-    return `<p class="txt-5 fw-lighter text-end">${minPrice(price)} <smal>T</smal></p>`;
+    return `<p class="txt-5 fw-lighter text-end">${minPrice(price)} <smal><img src="../toman.svg" class="toman-size"/></smal></p>`;
   } else {
     return `
     <div class="d-flex p-0 flex-column gap-0 align-items-end position-relative">
-      <p class="txt-5 fw-lighter text-end p-0 m-0 ms-5">${minPrice((price * sale) / 100)} <smal>T</smal></p>
-      <p class="fw-lighter text-end text-decoration-line-through text-gray p-0 m-0" style="font-size: 10px;">${minPrice(price)}</p>
-      <span class="p-1 badge rounded-pill bg-red text-light fw-lighter position-absolute top-right-0">${sale}%</span>
+      <p class="txt-6 fw-light d-flex flex-row align-items-center text-end p-0 m-0 ms-5">${minPrice((price * sale) / 100)} <smal><img src="../toman.svg" class="toman-size"/></smal></p>
+      <p class="fw-lighter text-end text-decoration-line-through text-gray p-0 m-0 font-10px">${minPrice(price)}</p>
+      <span class="p-1 badge rounded-pill bg-emerald text-light fw-lighter position-absolute top-right-0">${sale}%</span>
     </div>
     `;
   }

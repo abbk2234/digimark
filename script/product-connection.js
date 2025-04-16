@@ -157,7 +157,7 @@ async function getData() {
         `;
         }
       });
-      productTap([...document.querySelectorAll(".product-modal-btn")]);
+      productTab([...document.querySelectorAll(".product-modal-btn")]);
       document.querySelector(`#${data.db.product.brands[0].strId}`).classList.add("show", "active");
       document.querySelector(`a[href="#${data.db.product.brands[0].strId}"]`).classList.add("active");
     } else {
@@ -190,13 +190,13 @@ async function getData() {
   }
 }
 getData();
-function productTap(target) {
-  let PTap = document.createElement("div");
-  PTap.classList = "product-modal position-fixed full-screen-fixed z-3";
+function productTab(target) {
+  let PTab = document.createElement("div");
+  PTab.classList = "product-modal position-fixed full-screen-fixed z-3";
 
   target.map((elem) => {
     elem.addEventListener("click", () => {
-      PTap.innerHTML = `
+      PTab.innerHTML = `
       <div class="bg-glass w-100 h-100 rounded-3 z-2">
         <div class="p-2 p-md-3 col-9 h-100 overflow-auto center-fixed position-absolute rounded-5 bg-gray-50">
           <button class="btn-close- text-red bg-transparent fw-bold border-0">بستن</button>
@@ -205,8 +205,8 @@ function productTap(target) {
               <img src="${elem.children[0].children[0].src}" class="w-100 object-fit-cover rounded-5" alt=""/>
             </div>
             <div class="col-lg-6 pb-5">
-              <p class="fw-bolder txt-4">${elem.children[1].children[1].innerText}</p>
-              <p class="txt-5 text-gray-800">${elem.children[1].children[2].innerText}</p>
+            <p class="fw-bolder txt-4">${elem.children[1].children[1].innerText}</p>
+            <p class="txt-4 text-gray-800 text-justify px-4">${elem.children[1].children[2].innerText}</p>
               <div class="bg-gray-200 rounded-5 position-sticky bottom-0 p-2 d-flex flex-column justify-content-center align-items-center">
                 <div class="d-flex justify-content-between align-items-center col-12">
                   <div class="fw-bold txt-6">
@@ -223,10 +223,14 @@ function productTap(target) {
           </div>
         </div>  
       </div>`;
-      document.body.appendChild(PTap);
-
-      PTap.querySelector(".btn-close-").addEventListener("click", () => {
-        PTap.remove();
+      document.body.appendChild(PTab);
+      PTab.addEventListener("click", (even) => {
+        if (even.target.classList[0] == "bg-glass") {
+          PTab.remove();
+        }
+      });
+      PTab.querySelector(".btn-close-").addEventListener("click", () => {
+        PTab.remove();
       });
     });
   });
@@ -243,8 +247,8 @@ function priceOff(sale, price) {
   } else {
     return `
       <div class="d-flex p-0 flex-column gap-0 align-items-end position-relative">
-        <p class="txt-5 fw-lighter text-end p-0 m-0">${minPrice((price * sale) / 100)} <smal>T</smal></p>
-        <p class="fw-lighter text-end text-decoration-line-through text-gray p-0 m-0" style="font-size: 10px;">${minPrice(price)}</p>
+        <p class="txt-6 fw-light text-end p-0 m-0">${minPrice((price * sale) / 100)} <smal>T</smal></p>
+        <p class="fw-lighter text-end text-decoration-line-through text-gray p-0 m-0 font-10px">${minPrice(price)}</p>
         <span class="p-1 badge rounded-pill bg-red text-light fw-lighter position-absolute top-right-0">${sale}%</span>
       </div>
       `;

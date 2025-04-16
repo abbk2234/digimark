@@ -6,7 +6,7 @@ async function getData() {
       data.db.blog.map((elem, index) => {
         if (index <= 2) {
           document.querySelector("#banner").innerHTML += `
-        <div class="carousel-item" style="height: 350px;">
+        <div class="carousel-item height-350px">
           <img src="${elem.thumbnail}" class="d-block w-100 object-fit-cover ratio ratio-16x9" alt=""/>
           <div class="carousel-caption bg-dark bg-opacity-75 rounded-pill">
               <a href="#" class="text-decoration-none text-light">${elem.title}</a>
@@ -70,21 +70,26 @@ function genPost(target) {
       let Post = document.createElement("div");
       Post.classList = "bg-glass position-fixed full-screen-fixed rounded-5 h-100 w-100 overflow-auto z-3";
       Post.innerHTML = `
-       <div class="center-fixed h-100 position-absolute bg-gray-50 row justify-content-center rounded-5 gap-3 overflow-auto">
+       <div class="center-fixed col-10 col-md-9 h-100 position-absolute bg-gray-50 row justify-content-center rounded-5 gap-3 overflow-auto     ">
        <button class="bg-transparent d-inline-block btn-close- border-0 text-red fw-bold">بستن</button>
       <div class="overflow-hidden rounded-5">
         <img src="${elem.children[0].children[0].src}" class="w-100 object-fit-cover rounded-5"/>
       </div>
       <div>
         <p class="txt-4 fw-bolder">${elem.children[1].children[0].innerText}</p>
-        <p class="txt-5">${elem.children[1].children[1].innerText}</p>
-        <p class="txt-5">${elem.children[1].children[2].innerText}</p>
+        <p class="txt-4">${elem.children[1].children[1].innerText}</p>
+        <p class="txt-4 px-4 text-justify">${elem.children[1].children[2].innerText}</p>
         <p class="txt-6">${elem.children[1].children[3].innerText}</p>
         <p class="txt-6">${elem.children[1].children[4].innerHTML}</p>
       </div>
     </div>
        `;
       document.body.appendChild(Post);
+      Post.addEventListener("click", (even) => {
+        if (even.target.classList[0] == "bg-glass") {
+          Post.remove();
+        }
+      });
       Post.querySelector(".btn-close-").addEventListener("click", () => {
         Post.remove();
       });
