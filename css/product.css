@@ -1,79 +1,106 @@
 @font-face {
-    font-family: "Shabnam";
-    src: url(../font/Shabnam/Shabnam.ttf);
+  font-family: "Shabnam";
+  src: url(../font/Shabnam/Shabnam.ttf);
 }
 
 * {
-    font-family: Shabnam;
+  font-family: Shabnam;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .top-right-0 {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
+}
+
+.full-screen-fixed {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.center-fixed {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.w-min {
+  width: fit-content;
+}
+
+.bg-glass {
+  backdrop-filter: blur(5px);
+  background-color: #aaa5;
 }
 
 header .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: var(--col-red-500) !important;
+  color: var(--col-red-500) !important;
 }
 
 header .navbar-nav .nav-link {
-    font-size: 18px !important;
+  font-size: 18px !important;
 }
 
 header .navbar-nav .nav-link i {
-    font-size: 25px !important;
+  font-size: 25px !important;
 }
 
-
 header .item-header {
-    position: relative;
-    font-size: 13px;
+  position: relative;
+  font-size: 13px;
 }
 
 header .item-header i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header nav:last-of-type .active {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 header nav:last-of-type .active i {
-    color: black;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    font-size: 35px !important;
-    background-color: rgba(var(--bs-light-rgb), 1);
-    width: 60px;
-    height: 60px;
+  color: var(--col-red-500);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 35px !important;
+  background-color: rgba(var(--bs-light-rgb), 1);
+  width: 60px;
+  height: 60px;
 }
 
 .sticky-cu {
-    position: sticky;
-    top: 0;
-    z-index: 2000;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 }
 
 @media (max-width: 767px) {
-    .fixed-md-cu {
-        position: fixed;
-        top: unset;
-        bottom: 0;
-        z-index: 2000;
-    }
+  .fixed-md-cu {
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    z-index: 2000;
+  }
 }
+
 a.active div {
-    border: 10px solid var(--col-red-500);
+  border: 10px solid var(--col-red-500);
 }
+
 a.active p {
-    background-color: var(--col-red-500) !important;
-    color: white !important;
+  background-color: var(--col-red-500) !important;
+  color: white !important;
 }
